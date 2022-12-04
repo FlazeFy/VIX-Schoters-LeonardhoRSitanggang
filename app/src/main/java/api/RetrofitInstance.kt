@@ -2,7 +2,7 @@ package api
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import res_news
+import models.res_news
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import util.Constants.Companion.BASE_URL
