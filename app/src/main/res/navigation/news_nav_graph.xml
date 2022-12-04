@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/news_nav_graph"
+    app:startDestination="@id/breakingNewsFragment">
+
+    <fragment
+        android:id="@+id/breakingNewsFragment"
+        android:name="com.example.vix_schooters_leonardho.ui.fragments.BreakingNewsFragment"
+        android:label="BreakingNewsFragment" >
+        <action
+            android:id="@+id/action_breakingNewsFragment_to_detailNewsFragment"
+            app:destination="@id/detailNewsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookmarkNewsFragment"
+        android:name="com.example.vix_schooters_leonardho.ui.fragments.BookmarkNewsFragment"
+        android:label="BookmarkNewsFragment" >
+        <action
+            android:id="@+id/action_bookmarkNewsFragment_to_detailNewsFragment"
+            app:destination="@id/detailNewsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.vix_schooters_leonardho.ui.fragments.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/detailNewsFragment"
+        android:name="com.example.vix_schooters_leonardho.ui.fragments.DetailNewsFragment"
+        android:label="DetailNewsFragment" />
+</navigation>
